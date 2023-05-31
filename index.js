@@ -155,6 +155,13 @@ const createSuperheroCard = (obj) => {
   info.textContent = obj.info;
   card.appendChild(info);
 
+  //создаем контейнер для рейтинга супергероя
+  const tmpl = document.getElementById("tmpl");
+  const formCreate = document.createElement("form");
+  formCreate.id = "111";
+  formCreate.append(tmpl.content.cloneNode(true));
+  card.appendChild(formCreate);
+
   //возвращаем готовый блок с разметкой и заполненный элементами из массива
   return card;
 };
@@ -170,4 +177,28 @@ document.addEventListener("DOMContentLoaded", () => {
   superheroes.forEach((element) => {
     addSuperheroCard(element, cards);
   });
+});
+
+//
+cards.addEventListener("click", (event) => {
+  if (event.target.classList.contains("container__input")) {
+    const form = event.target.parentNode.parentNode;
+    const inputs = form.querySelectorAll(".container__input");
+    const icons = form.querySelectorAll(".icon");
+    const key = form.id;
+    const value = event.target.value;
+
+    icons.forEach((elem) => {
+      elem.style = "fill: black";
+    });
+
+    for (let i = 0; i < inputs.length; i++) {
+      icons[i].style = "fill: gold";
+      if (inputs[i].checked) {
+        break;
+      }
+    }
+    //записываем значение инпутов со свездами в localStorage
+    localStorage.setItem(key, value);
+  }
 });

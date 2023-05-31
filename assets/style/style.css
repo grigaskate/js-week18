@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  text-align: center;
+}
+
+.card__superhero {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid rgb(210, 209, 209);
+  border-radius: 5px;
+  max-width: 90%;
+}
+
+.image__superhero {
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+}
+
+h1 {
+  text-align: center;
+}

@@ -7,42 +7,75 @@
     <title>JSON</title>
     <link rel="stylesheet" href="assets/style/normalize.css" />
     <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Супергерои</h1>
-    <div class="cards"></div>
-    <template id="tmpl">
-      <label class="container__label">
-        <input type="radio" value="1" class="container__input" name="raiting" />
-        <svg class="icon">
-          <use xlink:href="assets/icon/sprite.svg#star-full-icon"></use>
-        </svg>
-      </label>
-      <label class="container__label">
-        <input type="radio" value="2" class="container__input" name="raiting" />
-        <svg class="icon">
-          <use xlink:href="assets/icon/sprite.svg#star-full-icon"></use>
-        </svg>
-      </label>
-      <label class="container__label">
-        <input type="radio" value="3" class="container__input" name="raiting" />
-        <svg class="icon">
-          <use xlink:href="assets/icon/sprite.svg#star-full-icon"></use>
-        </svg>
-      </label>
-      <label class="container__label">
-        <input type="radio" value="4" class="container__input" name="raiting" />
-        <svg class="icon">
-          <use xlink:href="assets/icon/sprite.svg#star-full-icon"></use>
-        </svg>
-      </label>
-      <label class="container__label">
-        <input type="radio" value="5" class="container__input" name="raiting" />
-        <svg class="icon">
-          <use xlink:href="assets/icon/sprite.svg#star-full-icon"></use>
-        </svg>
-      </label>
-    </template>
+    <div class="root">
+      <h1>Супергерои</h1>
+      <div class="cards"></div>
+      <template id="tmpl">
+        <label class="container__label">
+          <input
+            type="radio"
+            value="1"
+            class="container__input"
+            name="raiting"
+          />
+          <svg class="icon">
+            <use xlink:href="assets/icon/sprite.svg#star-full-icon"></use>
+          </svg>
+        </label>
+        <label class="container__label">
+          <input
+            type="radio"
+            value="2"
+            class="container__input"
+            name="raiting"
+          />
+          <svg class="icon">
+            <use xlink:href="assets/icon/sprite.svg#star-full-icon"></use>
+          </svg>
+        </label>
+        <label class="container__label">
+          <input
+            type="radio"
+            value="3"
+            class="container__input"
+            name="raiting"
+          />
+          <svg class="icon">
+            <use xlink:href="assets/icon/sprite.svg#star-full-icon"></use>
+          </svg>
+        </label>
+        <label class="container__label">
+          <input
+            type="radio"
+            value="4"
+            class="container__input"
+            name="raiting"
+          />
+          <svg class="icon">
+            <use xlink:href="assets/icon/sprite.svg#star-full-icon"></use>
+          </svg>
+        </label>
+        <label class="container__label">
+          <input
+            type="radio"
+            value="5"
+            class="container__input"
+            name="raiting"
+          />
+          <svg class="icon">
+            <use xlink:href="assets/icon/sprite.svg#star-full-icon"></use>
+          </svg>
+        </label>
+      </template>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
